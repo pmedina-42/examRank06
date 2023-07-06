@@ -82,7 +82,7 @@ int extract_msg(char **buff, char **msg) {
 				fatal_error();
 			strcpy(newbuff, *buff + i + 1);
 			*msg = *buff;
-			(*msg)[i + 1] = '\0';
+			(*msg)[i + 1] = 0;
 			*buff = newbuff;
 			return (1);
 		}
